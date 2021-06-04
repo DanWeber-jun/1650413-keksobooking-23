@@ -10,14 +10,14 @@ const getSomeInt = (min,max) => {
 
 getSomeInt(0, 100);
 
-const getSomeNumber = (min, max) => {
+const getSomeNumber = (min, max, digit) => {
   if (min < 0 || max < 0 ) {
     return -1;
   }
   if (min > max) {
     [min,max] = [max,min];
   }
-  return (Math.random() * (max - min) + min).toFixed();
+  return (Math.random() * (max - min) + min).toFixed(digit);
 };
 
 getSomeNumber(0, 100);
