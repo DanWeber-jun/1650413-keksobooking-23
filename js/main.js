@@ -1,29 +1,10 @@
 /* eslint-disable id-length */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-const getSomeInt = (min,max) => {
-  if (min < 0 || max < 0 ) {
-    return -1;
-  }
-  if (min > max) {
-    [min,max] = [max,min];
-  }
-  return Math.random(Math.random() * (max - min)) + min;
-};
-
-getSomeInt(0, 100);
-
-const getSomeNumber = (min, max, digit) => {
-  if (min < 0 || max < 0 ) {
-    return -1;
-  }
-  if (min > max) {
-    [min,max] = [max,min];
-  }
-  return (Math.random() * (max - min) + min).toFixed(digit);
-};
-
-getSomeNumber(0, 100);
+import './function-int.js';
+import './function-float.js';
+import './fun-shuffle-array.js';
+import './fun-random-number.js';
 
 
 const COUNT = 10;
@@ -56,26 +37,6 @@ const TYPES = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
 const TIMES = ['12:00', '13:00', '14:00'];
 const PHOTOS = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
 
-
-const getSomeFloat = (min, max, digit) => {
-  if (min < 0 || max < 0 ) {
-    return -1;
-  }
-  if (min > max) {
-    [min,max] = [max,min];
-  }
-  return (Math.random() * (max - min) + min).toFixed(digit);
-};
-
-const shuffleArray = (a) => {
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-};
-
-const getRandomNumber = (min, max) => Math.random(Math.random() * (max - min)) + min;
 
 const addOffer = () => ({
   author: {
