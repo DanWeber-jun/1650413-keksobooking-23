@@ -21,7 +21,7 @@ const Guests = {
   MAX: 8,
 };
 const Price = {
-  MIN: 1000,
+  MIN: 1500,
   MAX: 20000,
 };
 
