@@ -1,6 +1,7 @@
 const addForm = document.querySelector('.ad-form');
 const addFilters = document.querySelector('.map__filters');
 
+
 const setDisabledState = () => {
   addForm.forEach((item) => {
     item.disabled = !item.disabled;
