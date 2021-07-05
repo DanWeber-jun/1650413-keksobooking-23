@@ -1,12 +1,9 @@
-const addForm = document.querySelector('.ad-form');
+const addForm = document.querySelectorAll('fieldset, .map_filter > select');
 const addFilters = document.querySelector('.map__filters');
 
 
 const setDisabledState = () => {
   addForm.forEach((item) => {
-    item.disabled = !item.disabled;
-  });
-  addFilters.forEach((item) => {
     item.disabled = !item.disabled;
   });
 };
@@ -23,6 +20,7 @@ const toActiveState = () => {
   addForm.classList.remove('ad-form--disabled');
   addFilters.classList.remove('ad-form--disabled');
 };
+
 
 export {toInactiveState, toActiveState};
 
