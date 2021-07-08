@@ -2,9 +2,9 @@ const adForm = document.querySelector('.ad-form');
 const capacity = adForm.querySelector('#capacity');
 const guestNumbers = capacity.querySelectorAll('option');
 const roomNumber = adForm.querySelector('#room_number');
-// const timeForm = adForm.querySelector('.ad-form__element--time');
-// const timein = adForm.querySelector('#timein');
-// const timeout = adForm.querySelector('#timeout');
+const timeForm = adForm.querySelector('.ad-form__element--time');
+const timein = adForm.querySelector('#timein');
+const timeout = adForm.querySelector('#timeout');
 const priceInput = adForm.querySelector('#price');
 const typeOfHouse = adForm.querySelector('#type');
 
@@ -30,10 +30,10 @@ typeOfHouse.addEventListener('change', () => {
 });
 
 
-// timeForm.addEventListener('change', (evt) => {
-//   timein.value = evt.target.value;
-//   timeout.value = evt.target.value;
-// });
+timeForm.addEventListener('change', (evt) => {
+  timein.value = evt.target.value;
+  timeout.value = evt.target.value;
+});
 
 
 const NumberOfGuests = {
