@@ -1,3 +1,14 @@
+const adForm = document.querySelector('.ad-form');
+const capacity = adForm.querySelector('#capacity');
+const guestNumbers = capacity.querySelectorAll('option');
+const roomNumber = adForm.querySelector('#room_number');
+// const timeForm = adForm.querySelector('.ad-form__element--time');
+// const timein = adForm.querySelector('#timein');
+// const timeout = adForm.querySelector('#timeout');
+const priceInput = adForm.querySelector('#price');
+const typeOfHouse = adForm.querySelector('#type');
+
+
 const MIN_PRICE = {
   bungalow: 0,
   flat: 1000,
@@ -5,9 +16,6 @@ const MIN_PRICE = {
   house: 5000,
   palace: 100000,
 };
-
-const priceInput = document.querySelector('#price');
-const typeOfHouse = document.querySelector('#type');
 
 const onTypeOfHouseChange = () => {
   const minPrice = MIN_PRICE[typeOfHouse.value];
@@ -22,10 +30,11 @@ typeOfHouse.addEventListener('change', () => {
 });
 
 
-const adForm = document.querySelector('.ad-form');
-const capacity = adForm.querySelector('#capacity');
-const guestNumbers = capacity.querySelectorAll('option');
-const roomNumber = document.querySelector('#room_number');
+// timeForm.addEventListener('change', (evt) => {
+//   timein.value = evt.target.value;
+//   timeout.value = evt.target.value;
+// });
+
 
 const NumberOfGuests = {
   1: ['1'],
@@ -52,7 +61,6 @@ validateRooms();
 const onRoomNumberChange = () => {
   validateRooms();
 };
- 
 
 roomNumber.addEventListener('change', onRoomNumberChange);
 
