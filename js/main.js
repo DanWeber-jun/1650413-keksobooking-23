@@ -7,5 +7,3 @@ const map = document.querySelector('.map');
 
 
 map.appendChild(createCard(offers[0]));
-
-console.log(offers);
