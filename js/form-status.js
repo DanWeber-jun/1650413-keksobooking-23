@@ -1,9 +1,10 @@
-const addForm = document.querySelectorAll('fieldset, .map_filter > select');
+const addForm = document.querySelector('.ad-form');
+const fieldsets = document.querySelectorAll('fieldset, .map__filters > select')
 const addFilters = document.querySelector('.map__filters');
 
 
 const setDisabledState = () => {
-  addForm.forEach((item) => {
+  fieldsets.forEach((item) => {
     item.disabled = !item.disabled;
   });
 };

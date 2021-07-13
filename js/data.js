@@ -1,4 +1,4 @@
-import {shuffleArray, getRandomNumber, getSomeFloat, getSomeInt} from './utils/util.js';
+import {shuffleArray, getRandomNumber, getSomeFloat, getSomeInt} from './util.js';
 
 const COUNT = 10;
 const Lat = {
@@ -63,5 +63,5 @@ const getOffers = () => {
 getOffers();
 addOffer();
 
-export {offers};
+export {offers, getOffers};
 

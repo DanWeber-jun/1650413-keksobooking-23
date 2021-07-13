@@ -1,9 +1,7 @@
-import {createCard} from './create-number.js';
-import {offers} from './data.js';
-import './form.js';
-import './form-status.js';
+// import './create-number.js';
+import './data.js';
+// import './form.js';
+import {toInactiveState} from './form-status.js';
+import './map.js';
 
-const map = document.querySelector('.map');
-
-
-map.appendChild(createCard(offers[0]));
+toInactiveState();
