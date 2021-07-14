@@ -1,7 +1,9 @@
-// import './create-number.js';
-import './data.js';
-// import './form.js';
-import {toInactiveState} from './form-status.js';
-import './map.js';
+import {offers} from './data.js';
+import {toActiveState} from './form-status.js';
+import {createMapPin} from './map.js';
+import './form.js';
 
-toInactiveState();
+toActiveState();
+
+createMapPin(offers);
+

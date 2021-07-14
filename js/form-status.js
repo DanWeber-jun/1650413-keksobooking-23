@@ -1,5 +1,5 @@
 const addForm = document.querySelector('.ad-form');
-const fieldsets = document.querySelectorAll('fieldset, .map__filters > select')
+const fieldsets = document.querySelectorAll('fieldset, .map__filters > select');
 const addFilters = document.querySelector('.map__filters');
 
 
